@@ -5,6 +5,8 @@ const app = express();
 
 app.get('/student', async (req, res) => {
   const student = await studentModel.find({});
+  //removendo rota put
+  
 
   try {
     res.send(student);
